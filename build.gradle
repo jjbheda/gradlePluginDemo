@@ -4,7 +4,7 @@ buildscript {
         google()
         jcenter()
         maven {
-            url uri('/Users/jiangjingbo/iqiyi/cube-j/repo')
+            url uri('/Users/base_file/repo')
         }
     }
     dependencies {

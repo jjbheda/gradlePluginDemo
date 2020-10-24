@@ -9,7 +9,7 @@ public class TimePlugin implements Plugin<Project> {
 
     @Override
     void apply(Project project) {
-        println ("自定义插件加载成功")
+        println ("TimePlugin load sucess")
         AppExtension appExtension = project.getExtensions().getByType(AppExtension.class)
         appExtension.registerTransform(new TimePluginTransform())
 

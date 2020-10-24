@@ -19,9 +19,7 @@ public class TimePluginClassVisitor extends ClassVisitor {
 
     @Override
     MethodVisitor visitMethod(int access, String name, String desc, String signature, String[] exceptions) {
-
         MethodVisitor mv = cv.visitMethod(access,name,desc,signature,exceptions)
-        println 'className----------'
         return new TimeMethodVisitor(mv, className, name)
     }
 
